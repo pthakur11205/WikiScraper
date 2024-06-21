@@ -39,3 +39,5 @@ Pushpesh Thakur
 * 0.1
     * Initial Release
 
+## Acknowledgements
+Inspiration: https://www.freecodecamp.org/news/scraping-wikipedia-articles-with-python/

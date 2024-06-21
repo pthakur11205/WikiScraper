@@ -13,6 +13,7 @@ def scrapeArticle(url):
 
     # Extracting the title from the HTML
     title = soup.find(id="firstHeading")
+    print(title.text)
 
     # Get all the links from <a> tags
     allLinks = soup.find(id="bodyContent").find_all("a")
@@ -30,4 +31,7 @@ def scrapeArticle(url):
 
     #Calls the method on the selected article
     scrapeArticle("https://en.wikipedia.org" + linkToScrape['href'])
+
+#Call to Batman wiki article
+scrapeArticle("https://en.wikipedia.org/wiki/Batman")
 
